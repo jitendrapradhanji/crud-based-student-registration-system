@@ -1,0 +1,46 @@
+{% extends 'studentapp/base.html' %}
+
+{% block body %}
+<br>
+<div class="container">
+    <div class="main">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                <label class="form_label">{{form.name.label_tag}}</label>
+                <div class="form_control">{{form.name}}</div>
+            </div>
+            <div class="form-group">
+                <label class="form_label">{{form.dob.label_tag}}</label>
+                <div class="form_control">{{form.dob}}</div>
+            </div>
+            <div class="form-group">
+                <label class="form_label">{{form.gender.label_tag}}</label>
+                <div class="form_control">{{form.gender}}</div>
+            </div>
+            <div class="form-group">
+                <label class="form_label">{{form.course.label_tag}}</label>
+                <div class="form_control">{{form.course}}</div>
+            </div>
+            <div class="form-group">
+                <label class="form_label">{{form.city.label_tag}}</label>
+                <div class="form_control">{{form.city}}</div>
+            </div>
+            <div class="form-group">
+                <label class="form_label">{{form.phone.label_tag}}</label>
+                <div class="form_control">{{form.phone}}</div>
+            </div>
+            <div class="form-group">
+                <label class="form_label">{{form.email.label_tag}}</label>
+                <div class="form_control">{{form.email}}</div>
+            </div>
+            <div class="form-group">
+                <label class="form_label">{{form.image.label_tag}}</label>
+                <div class="form_control">{{form.image}}</div>
+            </div>
+            <br>
+            <input type="submit" class="btn btn-success" value="Update">
+        </form>
+    </div>
+</div>
+{% endblock body %}

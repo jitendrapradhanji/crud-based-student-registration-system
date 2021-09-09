@@ -1,0 +1,16 @@
+{% extends 'studentapp/base.html' %}
+
+
+{% block title %}Welcome{% endblock title %}
+
+{% load static %}
+{% block body %}
+<br>
+<div class="container">
+    <h1><span>Hello! {{ request.user }} </span></h1>
+</div>
+<br>
+<div style="text-align: center;">
+    <img src="{% static 'studentapp/images/img.jpg' %}" style="width:800px;height:470px;" alt="image">
+</div>
+{% endblock body %}

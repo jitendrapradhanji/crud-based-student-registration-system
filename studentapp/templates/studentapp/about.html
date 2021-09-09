@@ -1,0 +1,37 @@
+{% extends 'studentapp/base.html' %}
+
+{% block title %}About Us{% endblock title %}
+
+{% load static %}
+
+{% block body %}
+
+<div class="container">.
+    <br>
+    <h1 style="text-align:center; color: rgb(16, 39, 245);"><u>About Us</u></h1>
+</div>
+<br>
+<div class="container">
+    <div class="row align-items-start">
+        <div class="col">
+            <img src="{% static 'studentapp/images/std8.jpg' %}" style="width:500px;height:470px;" alt="image">
+        </div>
+        <div class="col" style="text-align: justify;">
+            <h4> Welcome to Student Registration System, Your number one source for all student registration.
+                We're dedicated to giving you the very best of Student Registration System , with a focus on student
+                registration.Founded in [2021] by [Jitendra Pradhan], Student Registration System has come a long way
+                from its beginnings in [Delhi]. Student Registration System helping other parents be more digitalize,
+                providing
+                the best equipment for their Children .We now serve customers all over Delhi and are thrilled to be a
+                part of the wing of the education industry.
+
+                We hope you enjoy our Student Registration System as much as we enjoy offering them to you. If you have
+                any questions or comments, please don't hesitate to contact us.
+
+                Sincerely,
+                (Student Registration System,
+                Founder : Jitendra Pradhan)</h4>
+        </div>
+    </div>
+</div>
+{% endblock body %}

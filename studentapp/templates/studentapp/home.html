@@ -1,0 +1,48 @@
+{% extends 'studentapp/base.html' %}
+
+{% block title %}Home{% endblock title %}
+
+{% load static %}
+
+{% block body %}
+
+<div>
+    <h1 style="text-align:center;background-color: royalblue; color: white;">
+        <strong>WELCOME TO STUDENT REGISTRATION PORTAL</strong>
+    </h1>
+</div>
+
+<div class="container" style="max-width: 600px;">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'studentapp/images/std0.png' %}" class="d-block w-100" alt="Image">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'studentapp/images/std1.jpg' %}" class="d-block w-100" alt="Image">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'studentapp/images/std2.jpg' %}" class="d-block w-100" alt="Image">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<br>
+<div class="container" style="max-width: 1300px;">
+    <p><strong>A student is primarily a person enrolled in a school or other educational institution and who is under
+            learning with goals of acquiring knowledge, developing professions and achieving employment at desired
+            field. In the broader sense, a student is anyone who applies themselves to the intensive intellectual
+            engagement with some matter necessary to master it as part of some practical affair in which such mastery is
+            basic or decisive.</strong></p>
+</div>
+{% endblock body %}
